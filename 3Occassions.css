@@ -1,0 +1,128 @@
+html,
+body {/*to remove white spaces around the web */
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffd2e8;
+    scrollbar-width: thin;
+}
+.navbar {/*for seperation of logo and navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffa7d2;
+    padding: 15px 30px;
+}
+.navbar ul {/*for navbar only */
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    gap: 20px;
+}
+.navbar a {/*for navbar design */
+    color: #E32070;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.navbar a:hover {/*for navbar animation */
+    color: #d63384;
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+
+.logo {/*for logo only */
+    color: #E32070;
+    font-size: larger;
+    font-weight: 800;
+    cursor: pointer;
+}
+.logo:hover { /*for logo animation*/
+    color: #ffd2e8;
+}
+.front {
+    color: #E32070;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.text {
+    flex-direction: column;
+    font-size: x-large;
+    margin-bottom: 50px;
+    margin-right: -200px;
+}
+
+.front img {
+    height: 500px;
+    width: 350px;
+    margin-right: 50px;
+    border: 1px solid;
+}
+
+.text { /*for animation of h1  */
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: fadeSlide 1s ease-out forwards;
+}
+.text p { /*for animation of p  */
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: fadeSlide 1.5s ease-out forwards;
+}
+@keyframes fadeSlide { /*for animation of h1 */
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.img {
+  animation: fadeIn 1s ease-in-out forwards; 
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start of animation: invisible */
+  }
+  100% {
+    opacity: 1; /* End of animation: fully visible */
+  }
+}
+
+header{
+    text-align: center;
+    font-size: 30px;
+    color: #E32070;
+}
+
+.flowers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* space between items */
+    justify-content: center;
+    
+}
+
+.item {
+    text-align: center;
+    font-size: x-large;
+    color: #E32070;
+    cursor: pointer;
+    transition: transform .2s;
+}
+.item:hover {
+    transform: scale(1.03);
+}
+.item img {
+    height: 250px; 
+    width: 350px;
+    display: block;
+    border-radius: 15px;
+}

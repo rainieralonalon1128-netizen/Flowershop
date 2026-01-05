@@ -1,0 +1,107 @@
+.body { /*for bg pic */
+    height: 91.7vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url(About\ us.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    text-align: left;
+    color: #E32070;
+    position: relative;
+}
+
+.body h2{ /*for header */
+    margin: 0px;
+    padding: 0px;
+    margin-top: 250px;
+    text-align: center;
+    position: relative;
+    font-size: large;
+}
+
+.body p { /*for paragraph */
+    text-align: justify;   
+    text-justify: inter-word;  
+    line-height: 1.6;     
+    width: 80%;            
+    margin: 20px auto;     
+}
+
+.animation { /*for animation of h2 & p */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlide 1s ease-out forwards;
+
+}
+
+
+@keyframes fadeSlide { /*for animation of h2 & p */
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+html,
+body {/*to remove white spaces around the web */
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.navbar {/*for seperation of logo and navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffa7d2;
+    padding: 15px 30px;
+}
+
+.navbar ul {/*for navbar only */
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.navbar a {/*for navbar design */
+    color: #E32070;
+    text-decoration: none;
+    padding: 5px;
+
+}
+
+.navbar a:hover {/*for navbar animation */
+    color: #d63384;
+    text-decoration: underline;
+    transition: 0.3s ease;
+    
+
+
+}
+
+.logo {/*for logo only */
+    color: #E32070;
+    font-size: larger;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.logo:hover { /*for logo animation*/
+    color: #ffd2e8;
+
+}

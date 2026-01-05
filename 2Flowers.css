@@ -1,0 +1,132 @@
+html,
+body {/*to remove white spaces around the web */
+    margin: 0px;
+    padding: 0px;
+    background-color: #ffd2e8;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+}
+
+.body {
+    /*for bg pic */
+    height: 91.7vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url(flowers\ bg.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar {/*for seperation of logo and navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffa7d2;
+    padding: 15px 30px;
+}
+.navbar ul {/*for navbar only */
+    text-decoration: none;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    gap: 20px;
+}
+.navbar a {/*for navbar design */
+    color: #E32070;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.navbar a:hover {/*for navbar animation */
+    color: #d63384;
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+
+.logo {/*for logo only */
+    color: #E32070;
+    font-size: larger;
+    font-weight: 800;
+    cursor: pointer;
+}
+.logo:hover { /*for logo animation*/
+    color: #ffd2e8;
+}
+.text{
+    text-align: center;
+    color: #E32070;
+    transform: translateY(250px);
+    font-size: x-large;
+}
+.animation1 {
+    /*for animation of h1  */
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlide 1s ease-out forwards;
+}
+.animation2 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlide 1.5s ease-out forwards;
+}
+.animation3 {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeSlide 2s ease-out forwards;
+}
+
+@keyframes fadeSlide {
+
+    /*for animation of h1 */
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.flowers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* space between items */
+    justify-content: center;
+    
+}
+
+.item {
+    text-align: center;
+    font-size: x-large;
+    color: #E32070;
+    cursor: pointer;
+    transition: transform .2s;
+    background: aliceblue;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 5px;
+}
+.item:hover {
+    transform: scale(1.03);
+}
+
+
+.item img {
+    height: 250px; 
+    width: 350px;
+    display: block;
+    border-radius: 15px;
+}
+.order-link {
+    color: #E32070; 
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.order-link:hover {
+    text-decoration: underline;
+}
